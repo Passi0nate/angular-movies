@@ -1,0 +1,36 @@
+<p>Hello World</p>
+<div>
+{{title}}
+</div>
+
+<div>
+    The sum of 2 and 2 is {{2 + 2}}
+</div>
+
+<div>
+    The double of 3 is {{duplicateNumber(3)}}
+</div>
+
+<h2>Movie Data</h2>
+
+<img
+*ngIf="!movies"
+ src="https://vpic.nhtsa.dot.gov/decoder/Images/ajax-loader.gif"/>
+
+<div *ngIf="movies?.length === 0">
+There are no records to display
+</div>
+
+<div *ngFor="let movie of movies; let index = index" class="movie-container">
+<div>{{ index }} {{ movie.title | lowercase }}
+</div>
+
+<div>
+    {{ movie.releaseDate | date:"dd-MMMM-yyyy" | uppercase}}
+</div>
+
+<div>
+    {{movie.price | currency}}
+</div>
+
+</div>

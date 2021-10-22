@@ -1,11 +1,12 @@
+import { analyzeAndValidateNgModules } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-movies-list',
+  templateUrl: './movies-list.component.html',
+  styleUrls: ['./movies-list.component.css']
 })
-export class AppComponent implements OnInit {
+export class MoviesListComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
      // this.movies  = [];
@@ -21,13 +22,8 @@ export class AppComponent implements OnInit {
       }];
 
   }, 1000);
+
+  title = 'any value';
+  movies: any;
 }
-
-  title = 'angular-movies';
-
-movies: any;
-
-  duplicateNumber(n : number) {
-    return n*2;
-  }
 }
