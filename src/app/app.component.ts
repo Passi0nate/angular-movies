@@ -6,24 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  ngOnInit(): void {
-    setTimeout(() => {
-     // this.movies  = [];
-      this.movies  = [{
-        title: "Spider-man",
-        releaseDate: new Date(),
-        price: 1400.99
-      },
-      {
-        title: "Moana",
-        releaseDate: new Date('2016-11-14'),
-        price: 300.99
-      }];
+  ngOnInit(): void
+  {
+    this.moviesInTheatres = [{
+      title: "Spider-man",
+      releaseDate: new Date(),
+      price: 1400.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    }];
+  }
+  
+  moviesInTheatres:any;
+  moviesFutureReleases:any;
 
-  }, 1000);
-}
-
-  title = 'angular-movies';
+  title = 'any value';
 
 movies: any;
 
