@@ -1,25 +1,21 @@
+<app-generic-list [list]="movies">
 
 
-<h2>Movie Data</h2>
+    <ng-container content>
+        <div *ngFor="let movie of movies; let index = index" class="movie-container">
+            <div>{{ index }} {{ movie.title | lowercase }}
+        <button style="margin-left: 1rem;"(click)="remove(index)">Remove</button>
+            </div>
+        
+            <div>
+                {{ movie.releaseDate | date:"dd-MMMM-yyyy" | uppercase}}
+            </div>
+        
+            <div>
+                {{movie.price | currency}}
+            </div>
+        </div>
+    </ng-container>
+</app-generic-list>
 
-<img
-*ngIf="!movies"
- src="https://vpic.nhtsa.dot.gov/decoder/Images/ajax-loader.gif"/>
 
-<div *ngIf="movies?.length === 0">
-There are no records to display
-</div>
-
-<div *ngFor="let movie of movies; let index = index" class="movie-container">
-<div>{{ index }} {{ movie.title | lowercase }}
-</div>
-
-<div>
-    {{ movie.releaseDate | date:"dd-MMMM-yyyy" | uppercase}}
-</div>
-
-<div>
-    {{movie.price | currency}}
-</div>
-
-</div>

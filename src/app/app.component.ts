@@ -17,7 +17,115 @@ export class AppComponent implements OnInit {
       title: "Moana",
       releaseDate: new Date('2016-11-14'),
       price: 300.99
-    }];
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    },
+    {
+      title: "Moana",
+      releaseDate: new Date('2016-11-14'),
+      price: 300.99
+    }],
+    
+
+    this.moviesFutureReleases = [];
   }
   
   moviesInTheatres:any;
